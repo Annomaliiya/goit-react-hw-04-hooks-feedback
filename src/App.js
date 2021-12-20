@@ -12,10 +12,11 @@ const initialState = {
   neutral: 0,
   bad: 0
 }
+const btnOptions = ['good', 'neutral', 'bad'];
 
 const App = () => {
   const [state, setState] = useState(initialState);
-  const btnOptions = ['good', 'neutral', 'bad'];
+
 
   const handleClick = option => {
     setState(
